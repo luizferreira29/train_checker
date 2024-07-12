@@ -2,6 +2,7 @@ import streamlit as st
 import requests
 import json
 import pprint
+apikey = "W2MXFgz1fxg54B518oUO1lpfLVVbxUZy"
 import requests
 from requests.auth import HTTPBasicAuth
 import pandas as pd
@@ -11,12 +12,10 @@ from json2xml import json2xml
 
 from bs4 import BeautifulSoup
 from datetime import datetime
-from datetime import datetime
+
 
 st.title("Train checker for Vernouillet-Verneuil")
 st.caption("This app allows you to check if your train is on time.")
-
-apikey = st.text_input("apikey", type="default")
 
 def handle_train_check(url_param):
     url = f"https://prim.iledefrance-mobilites.fr/marketplace/stop-monitoring?MonitoringRef={url_param}"
