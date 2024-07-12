@@ -2,7 +2,6 @@ import streamlit as st
 import requests
 import json
 import pprint
-apikey = "W2MXFgz1fxg54B518oUO1lpfLVVbxUZy"
 import requests
 from requests.auth import HTTPBasicAuth
 import pandas as pd
@@ -13,6 +12,8 @@ from json2xml import json2xml
 from bs4 import BeautifulSoup
 from datetime import datetime
 
+
+apikey = "W2MXFgz1fxg54B518oUO1lpfLVVbxUZy"
 
 st.title("Train checker for Vernouillet-Verneuil")
 st.caption("This app allows you to check if your train is on time.")
