@@ -24,7 +24,7 @@ def handle_train_check(url_param):
     req = requests.get(url, headers=headers).json()
     print('Status:',req)
     response_xml = json2xml.Json2xml(req, wrapper="all", pretty=True).to_xml()
-    soup = BeautifulSoup(response_xml, features="lxml")
+    soup = BeautifulSoup(response_xml, features="xml")
     destination = []
     time_arrival = []
     status = []
